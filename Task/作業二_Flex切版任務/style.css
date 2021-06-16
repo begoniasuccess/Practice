@@ -1,0 +1,19 @@
+div.main {
+  font-size: 2em;
+  color: pink;
+}
+
+div.main a {
+  color: blue;
+}
+
+div.main div {
+  color: pink;
+}
+
+div.main:hover {
+  background: yellow;
+  color: pink;
+  font-size: 3em;
+}
+/*# sourceMappingURL=style.css.map */

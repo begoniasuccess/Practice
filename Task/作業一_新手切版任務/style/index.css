@@ -1,0 +1,119 @@
+body {
+  background-color: white;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+body * {
+  line-height: 1.5em;
+}
+
+.container {
+  width: 100%;
+}
+
+.container section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 2.5em;
+}
+
+.container section.title img:last-child {
+  width: 324px;
+  height: 324px;
+}
+
+.container section.work_exp ul p {
+  font-size: 20px;
+  max-width: 33em;
+}
+
+.container section.deepBlue_area {
+  width: 100%;
+  max-width: 100%;
+  background-color: #415165;
+  color: white;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.container section.deepBlue_area > * {
+  max-width: 996px;
+  margin: 0 auto;
+}
+
+.container section.deepBlue_area h2 {
+  margin-top: 0.5em;
+  border-color: #fff;
+}
+
+.container section.deepBlue_area h2 > span {
+  color: white;
+}
+
+.container section.deepBlue_area.skill .list {
+  font-weight: lighter;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.container section.deepBlue_area.skill .list > * {
+  text-align: left;
+}
+
+.container section.deepBlue_area.contact .btns img {
+  width: 48px;
+  height: 48px;
+  margin: 1em 24px 0 0;
+}
+
+.container section.deepBlue_area ul {
+  margin: 1em auto;
+}
+
+li {
+  line-height: 2em;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+h1, h2 {
+  border-bottom: 1px solid #000;
+  margin-bottom: 0.3em;
+}
+
+h1 > span, h2 > span {
+  font-weight: medium;
+  font-size: 0.75em;
+  color: #A00404;
+  margin-left: 0.5em;
+}
+
+.left_line {
+  border-left: 1px solid #96A9C4;
+  padding-left: 1em;
+  margin-left: 1em;
+}
+
+img[alt=avatar] {
+  margin-top: 1.5em;
+  margin-bottom: -0.5em;
+}
+
+img[alt=icon_lc], img[alt=icon_tree] {
+  margin-bottom: -0.7em;
+}
+/*# sourceMappingURL=index.css.map */
