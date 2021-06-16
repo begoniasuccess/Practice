@@ -32,8 +32,7 @@ body{
             background-color: $deepBlue;
             color: white;
             text-align: center;
-            padding: 0.5em 0;
-            
+            padding: 0.5em 0;            
             > *{
                 max-width: 996px;
                 margin: 0 auto;
@@ -100,5 +99,6 @@ img[alt=avatar]{
     margin-bottom: -0.5em;
 }
 img[alt=icon_lc],img[alt=icon_tree]{
-    margin-bottom: -0.7em;
+    // margin-bottom: -0.7em;
+    display: block;
 }

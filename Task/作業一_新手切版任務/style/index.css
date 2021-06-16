@@ -114,6 +114,6 @@ img[alt=avatar] {
 }
 
 img[alt=icon_lc], img[alt=icon_tree] {
-  margin-bottom: -0.7em;
+  display: block;
 }
 /*# sourceMappingURL=index.css.map */
