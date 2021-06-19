@@ -1,0 +1,15 @@
+body{
+    background: #ffffff;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+header{
+    nav{
+        h1{
+            @include textToImg("../img/logo-all-dark.svg", 171px, 27px);
+        }
+    }
+}

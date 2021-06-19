@@ -1,0 +1,32 @@
+@mixin textToImg($imgUrl, $w, $h){
+    background: {
+        image:url($imgUrl);
+        repeat: no-repeat;
+    }
+    width: $w;
+    height: $h;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@mixin light-border{
+    border: {
+        style:solid;
+        width:1px;
+        color:$light-green;
+    }
+}
+@mixin mainStyle{
+    color:$main-green;
+    fill:$main-green;
+    background:white;
+}
+@mixin tagStyle{
+    color:$light-green;
+    fill:$light-green;
+    background: $main-green;
+}
+@mixin btnStyle{
+    color:$main-green;
+    background: $light-green;
+}

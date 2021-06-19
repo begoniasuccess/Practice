@@ -1,0 +1,18 @@
+body {
+  background: #ffffff;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+header nav h1 {
+  background-image: url("../img/logo-all-dark.svg");
+  background-repeat: no-repeat;
+  width: 171px;
+  height: 27px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*# sourceMappingURL=index.css.map */
