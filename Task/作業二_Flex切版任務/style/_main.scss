@@ -1,15 +1,256 @@
 body{
     background: #ffffff;
+    font-size: $main-fz;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    @include mainStyle;
 }
-
-ul li{
-    list-style-type: none;
+img{
+    width:100%;
 }
-
+ul{
+    padding-inline-start: 0;
+    margin:0;
+    li{
+        list-style-type: none;
+    }
+} 
+header, main{
+    max-width: 940px;
+    margin:1em auto;
+}
 header{
-    nav{
+    nav.menu {
+        font-size: 0.8em;
+        line-height: 73px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         h1{
-            @include textToImg("../img/logo-all-dark.svg", 171px, 27px);
+            @include textToImg("../img/logo-all-dark.svg", 220px, 40px);
+        }
+        ul{
+            li{
+                margin:0 1em;
+                &:last-child{
+                    margin-left:2em;
+                }
+            }
         }
     }
+}
+main{
+    .wraper{
+        display: flex;
+        justify-content: space-between;
+        *{
+            box-sizing: border-box;
+        }
+        .menu{
+            width:300px;            
+            ul{
+                width:100%;
+                line-height: 40px;                
+                li{
+                    button{
+                        width:100%;
+                        font-weight: 600;
+                        font-size: 1.2em;
+                        @include lightBorder;
+                        @include mainStyle;
+                        &.selected{
+                            @include btnStyle;
+                        }
+                    }
+                    &:first-child button{
+                        @include tagStyle;
+                    }
+                    
+                }
+                 
+            }
+        }
+        .goods{
+            width:640px;
+            .cards{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;                    
+                    li.card{                        
+                        width:300px;
+                        margin:0 0 20px 20px;
+                        .pic{
+                            position: relative;
+                            & > *{
+                                position: absolute;
+                                &:first-child{
+                                    position: relative;
+                                }
+                            }
+                            .favorite{
+                                right:0px;
+                                top: 0px;
+                                background: transparent;
+                                img{
+                                    width:20px;
+                                }
+                            }    
+                            .tag{
+                                @include tagStyle;
+                                top:0;
+                                left:1em;
+                                font-size: 0.8em;
+                                line-height: 20px;
+                                -webkit-writing-mode: vertical-lr;
+                                writing-mode: vertical-lr;
+                                width:36px;
+                                height:107px;                                
+                            }
+                                                    
+                        }
+                        .info{
+                            margin-top: -5px;
+                            display: flex;
+                            line-height: 20px;
+                            & > *{
+                                @include lightBorder;
+                                margin-right:-1px;
+                                padding:1em 0;
+                            }
+                            .name{
+                                width:173px;
+                            }
+                            .price{
+                                width: 127px;
+                                font-weight: 600;
+                            }
+                            
+                        }
+                        .add_cart{
+                            @include btnStyle;
+                            width:100%;
+                            font-weight: 600;     
+                            font-size: 1.2em;
+                            &:hover{
+                                @include tagStyle;
+                            }                       
+                        }
+                    }
+                }
+            }
+            .pagination{
+                ul{
+                    width:100%;
+                    display: flex;
+                    justify-content: flex-end;                    
+                    li{         
+                        text-align: center;               
+                        button{
+                            @include mainStyle;
+                            @include lightBorder;
+                            margin-right:-1px;
+                            box-sizing: border-box;
+                            height:100%;
+                            width:60px;
+                            font-size: 20px;
+                            line-height: 20px;
+                            text-align: center;
+                            img{
+                                width:24px;
+                                height:24px;
+                            }
+                            &.selected{
+                                @include tagStyle;
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+footer{
+    text-align: left;
+    .container{
+        width:780px;
+        margin: 0 auto;
+    }
+    section.subscribe{
+        @include tagStyle;        
+        padding: 30px 0;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }        
+        h1{
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        .send_email{
+            input{
+                @include btnStyle;
+                border:none;
+                height:100%;
+            }
+            background-color: $light-green;
+            button{
+                background-color: $lemon-yellow;
+            }
+        }
+    }
+    section.contact{
+        @include btnStyle;
+        padding: 30px 0;
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .logo_txt{
+                margin-top: 10px;
+                margin-bottom:100px;
+            }
+            ul{
+                line-height: 24px;
+                font-size: 0.8em;           
+                font-weight: normal;    
+            }
+        }
+        
+        h1{
+            writing-mode: vertical-rl;
+            font-size: 1.2em;
+        }
+        .wraper{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;            
+        }
+    }
+    img{
+        &[alt=arrow_forward]{
+            @include square(16px);
+        }
+        &[alt=icon_mail]{
+            @include square(24px);
+        }
+        &[alt=logo_light],&[alt=icon_line],&[alt=icon_fb]{
+            @include square(32px);
+            &[alt=logo_light]{
+                margin-right: 20px;
+            }
+        }
+        &[alt=logo_txt]{
+            width: 172px;
+        }
+
+    }
+
 }

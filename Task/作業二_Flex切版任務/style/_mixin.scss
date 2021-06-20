@@ -9,7 +9,14 @@
     white-space: nowrap;
     overflow: hidden;
 }
-@mixin light-border{
+
+
+@mixin square($len){
+    width: $len;
+    height: $len;
+}
+
+@mixin lightBorder{
     border: {
         style:solid;
         width:1px;
@@ -22,6 +29,7 @@
     background:white;
 }
 @mixin tagStyle{
+    font-weight: 600;
     color:$light-green;
     fill:$light-green;
     background: $main-green;

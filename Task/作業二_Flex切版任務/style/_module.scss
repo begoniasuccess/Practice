@@ -1,0 +1,22 @@
+// Level 1 module
+.abs{
+    position: relative;
+}
+.abs-center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+//Level 2 module
+.row-align-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -10,11 +10,9 @@
 </head>
 <body>
     <header>
-        <nav>
-            <h1>                
-                Sweetaste                
-            </h1>            
-            <ul class="menu">
+        <nav class="menu">
+            <h1>Sweetaste</h1>            
+            <ul class="row-align-center">
                 <li>首頁</li>
                 <li>甜點</li>
                 <li>登入</li>
@@ -26,116 +24,188 @@
     </header>
     <main>
         <section class="banner">
-            <h2>想吃甜點──<br>是不需要理由的</h2>
             <img src="img/banner.png" alt="">
         </section>
-        <nav>
-            <ul class="menu">
-                <li>甜點類別</li>
-                <li class="selected">所有甜點（48）</li>
-                <li>本日精選（10）</li>
-                <li>人氣推薦（26）</li>
-                <li>新品上市（12）</li>
-            </ul>
-        </nav>
-        <section class="content">
-            <div class="goods">
-                <ul>
-                    <li class="card">
-                        <div class="pic">                            
-                            <img src="img/p-1.png" alt="">
-                            <img src="img/favorite_border.png" alt="">
-                            <div class="tag">本日精選</div>
-                        </div>
-                        <div class="info">
-                            <div class="name">鮮果優格慕斯</div>
-                            <div class="price">NT$ 450</div>
-                        </div>
-                        <button class="add_btn">加入購物車</button>
-                    </li>
-                    <li class="card">
-                        <div class="pic">                            
-                            <img src="img/p-2.png" alt="">
-                            <img src="img/favorite_border.png" alt="">
-                            <div class="tag">本日精選</div>
-                        </div>
-                        <div class="info">
-                            <div class="name">天使糖霜甜甜圈</div>
-                            <div class="price">NT$ 450</div>
-                        </div>
-                        <button class="add_btn">加入購物車</button>
-                   </li>
-                    <li class="card">
-                        <div class="pic">                            
-                            <img src="img/p-3.png" alt="">
-                            <img src="img/favorite_border.png" alt="">
-                            <div class="tag">本日精選</div>
-                        </div>
-                        <div class="info">
-                            <div class="name">鄉村綜合莓果派</div>
-                            <div class="price">NT$ 450</div>
-                        </div>
-                        <button class="add_btn">加入購物車</button>
-                   </li>
-                    <li class="card">
-                        <div class="pic">                            
-                            <img src="img/p-4.png" alt="">
-                            <img src="img/favorite_border.png" alt="">
-                            <div class="tag">本日精選</div>
-                        </div>
-                        <div class="info">
-                            <div class="name">酥脆焦糖蘋果塔</div>
-                            <div class="price">NT$ 450</div>
-                        </div>
-                        <button class="add_btn">加入購物車</button>
-                   </li>
-                    <li class="card">
-                        <div class="pic">                            
-                            <img src="img/p-5.png" alt="">
-                            <img src="img/favorite_border.png" alt="">
-                            <div class="tag">本日精選</div>
-                        </div>
-                        <div class="info">
-                            <div class="name">切片鮮奶油蛋糕</div>
-                            <div class="price">NT$ 450</div>
-                        </div>
-                        <button class="add_btn">加入購物車</button>
-                   </li>
-                    <li class="card">
-                        <div class="pic">                            
-                            <img src="img/p-6.png" alt="">
-                            <img src="img/favorite_border.png" alt="">
-                            <div class="tag">本日精選</div>
-                        </div>
-                        <div class="info">
-                            <div class="name">輕食水果優格</div>
-                            <div class="price">NT$ 450</div>
-                        </div>
-                        <button class="add_btn">加入購物車</button>
-                   </li>
-                </ul>
-            </div>
-            <nav class="pagination">
+        <div class="test">
+            <div></div>
+        </div>
+        <div class="wraper">
+            <nav class="menu">
                 <ul>
                     <li>
-                        <img src="img/arrow_left.png" alt="">
+                        <button>甜點類別</button>                        
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
                     <li>
-                        <img src="img/arrow_right.png" alt="">
+                        <button class="selected">所有甜點（48）</button>
+                    </li>                  
+                    <li>
+                        <button>本日精選（10）</button>
+                    </li>
+                    <li>
+                        <button>人氣推薦（26）</button>
+                    </li>
+                    <li>
+                        <button>新品上市（12）</button>
                     </li>
                 </ul>
             </nav>
-        </section>
+            <section class="goods">
+                <div class="cards">
+                    <ul> 
+                        <li class="card">
+                            <div class="pic">                            
+                                <img src="img/p-1.png" alt="">
+                                <button class="favorite">
+                                    <img src="img/favorite_border.png" alt="favorite">
+                                </button>                                
+                                <div class="tag">本日精選</div>
+                            </div>
+                            <div class="info">
+                                <div class="name">鮮果派對慕斯</div>
+                                <div class="price">NT$ 450</div>
+                            </div>
+                            <button class="add_cart">加入購物車</button>
+                        </li>
+                        <li class="card">
+                            <div class="pic">                            
+                                <img src="img/p-2.png" alt="">
+                                <button class="favorite">
+                                    <img src="img/favorite_border.png" alt="favorite">
+                                </button>                                
+                                <div class="tag">本日精選</div>
+                            </div>
+                            <div class="info">
+                                <div class="name">天使糖霜甜甜圈</div>
+                                <div class="price">NT$ 230</div>
+                            </div>
+                            <button class="add_cart">加入購物車</button>
+                       </li>
+                        <li class="card">
+                            <div class="pic">                            
+                                <img src="img/p-3.png" alt="">
+                                <button class="favorite">
+                                    <img src="img/favorite_border.png" alt="favorite">
+                                </button>                                
+                                <div class="tag">本日精選</div>
+                            </div>
+                            <div class="info">
+                                <div class="name">鄉村綜合莓果派</div>
+                                <div class="price">NT$ 550</div>
+                            </div>
+                            <button class="add_cart">加入購物車</button>
+                       </li>
+                        <li class="card">
+                            <div class="pic">                            
+                                <img src="img/p-4.png" alt="">
+                                <button class="favorite">
+                                    <img src="img/favorite_border.png" alt="favorite">
+                                </button>                                
+                                <div class="tag">本日精選</div>
+                            </div>
+                            <div class="info">
+                                <div class="name">酥脆焦糖蘋果塔</div>
+                                <div class="price">NT$ 350</div>
+                            </div>
+                            <button class="add_cart">加入購物車</button>
+                       </li>
+                        <li class="card">
+                            <div class="pic">                            
+                                <img src="img/p-5.png" alt="">
+                                <button class="favorite">
+                                    <img src="img/favorite_border.png" alt="favorite">
+                                </button>                                
+                                <div class="tag">本日精選</div>
+                            </div>
+                            <div class="info">
+                                <div class="name">切片鮮奶油蛋糕</div>
+                                <div class="price">NT$ 220</div>
+                            </div>
+                            <button class="add_cart">加入購物車</button>
+                       </li>
+                        <li class="card">
+                            <div class="pic">                            
+                                <img src="img/p-6.png" alt="">
+                                <button class="favorite">
+                                    <img src="img/favorite_border.png" alt="favorite">
+                                </button>                                
+                                <div class="tag">本日精選</div>
+                            </div>
+                            <div class="info">
+                                <div class="name">輕食水果優格</div>
+                                <div class="price">NT$ 90</div>
+                            </div>
+                            <button class="add_cart">加入購物車</button>
+                       </li>
+                    </ul>
+                </div>
+                <nav class="pagination">
+                    <ul>
+                        <li>
+                            <button>
+                                <img src="img/arrow_left.png" alt="">
+                            </button>                            
+                        </li>
+                        <li>
+                            <button class="selected">1</button>
+                        </li>
+                        <li>
+                            <button>2</button>
+                        </li>
+                        <li>
+                            <button>3</button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="img/arrow_right.png" alt="">
+                            </button>                            
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>        
     </main>
     <footer>
-        <section class="subscribe">
-
+        <section class="subscribe">         
+            <div class="container">
+                <h1>
+                    <img src="img/logo-light.svg" alt="logo_light">
+                    訂閱你我的甜蜜郵件
+                </h1>
+                <div class="send_email">
+                    <img src="img/mail-24px.png" alt="icon_mail">
+                    <input type="email" name="" id="">
+                    <button>
+                        <img src="img/arrow_forward-24px.png" alt="arrow_forward">
+                    </button>
+                </div>                
+            </div>               
         </section>
         <section class="contact">
-            
+            <div class="container">
+                <div class="content">
+                    <div class="logo_txt">
+                        <img src="img/logotype-sm-dark.svg" alt="logo_txt">
+                    </div>
+                    <ul>
+                        <li>07-1234-5678</li>
+                        <li>sweetaste@email.com</li>
+                        <li>800 高雄市新興區幸福路 520 號</li>
+                    </ul>
+                    <div class="social_btns">
+                        <img src="img/ic-line@.svg" alt="icon_line">
+                        <img src="img/ic-facebook.svg" alt="icon_fb">
+                    </div>
+                </div>                
+                <div class="wraper">
+                    <h1>
+                        今天是個<br>
+                         吃甜點的好日子。
+                    </h1>
+                    <p class="copy_right">
+                        © 2018 Sweetaste* All Rights Reserved
+                    </p>
+                </div>
+            </div>            
         </section>
     </footer>
 </body>
