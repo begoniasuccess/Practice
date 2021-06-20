@@ -2,7 +2,7 @@ body{
     background: #ffffff;
     font-size: $main-fz;
     text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'PingFang TC','Noto Sans TC', sans-serif;
     @include mainStyle;
 }
 img{
@@ -17,7 +17,7 @@ ul{
 } 
 header, main{
     max-width: 940px;
-    margin:1em auto;
+    margin:30px auto;
 }
 header{
     nav.menu {
@@ -31,143 +31,155 @@ header{
         }
         ul{
             li{
-                margin:0 1em;
+                margin:0 1em;                
                 &:last-child{
                     margin-left:2em;
+                }
+                button{
+                    @include mainStyle;
                 }
             }
         }
     }
 }
 main{
+    > *{
+        margin:30px auto;
+    }
+    .banner{
+        padding-bottom: 30px;
+    }
     .wraper{
         display: flex;
         justify-content: space-between;
         *{
             box-sizing: border-box;
         }
-        .menu{
-            width:300px;            
-            ul{
-                width:100%;
-                line-height: 40px;                
-                li{
-                    button{
-                        width:100%;
-                        font-weight: 600;
-                        font-size: 1.2em;
-                        @include lightBorder;
-                        @include mainStyle;
-                        &.selected{
-                            @include btnStyle;
-                        }
-                    }
-                    &:first-child button{
-                        @include tagStyle;
-                    }
-                    
-                }
-                 
-            }
-        }
-        .goods{
-            width:640px;
-            .cards{
-                ul{
-                    display: flex;
-                    flex-wrap: wrap;                    
-                    li.card{                        
-                        width:300px;
-                        margin:0 0 20px 20px;
-                        .pic{
-                            position: relative;
-                            & > *{
-                                position: absolute;
-                                &:first-child{
-                                    position: relative;
-                                }
-                            }
-                            .favorite{
-                                right:0px;
-                                top: 0px;
-                                background: transparent;
-                                img{
-                                    width:20px;
-                                }
-                            }    
-                            .tag{
-                                @include tagStyle;
-                                top:0;
-                                left:1em;
-                                font-size: 0.8em;
-                                line-height: 20px;
-                                -webkit-writing-mode: vertical-lr;
-                                writing-mode: vertical-lr;
-                                width:36px;
-                                height:107px;                                
-                            }
-                                                    
-                        }
-                        .info{
-                            margin-top: -5px;
-                            display: flex;
-                            line-height: 20px;
-                            & > *{
-                                @include lightBorder;
-                                margin-right:-1px;
-                                padding:1em 0;
-                            }
-                            .name{
-                                width:173px;
-                            }
-                            .price{
-                                width: 127px;
-                                font-weight: 600;
-                            }
-                            
-                        }
-                        .add_cart{
-                            @include btnStyle;
-                            width:100%;
-                            font-weight: 600;     
-                            font-size: 1.2em;
-                            &:hover{
-                                @include tagStyle;
-                            }                       
-                        }
-                    }
-                }
-            }
-            .pagination{
-                ul{
+    }
+    .menu{
+        width:300px;            
+        ul{
+            width:100%;             
+            li{
+                button{
                     width:100%;
-                    display: flex;
-                    justify-content: flex-end;                    
-                    li{         
-                        text-align: center;               
-                        button{
-                            @include mainStyle;
+                    line-height: 40px;   
+                    height: 65px;
+                    font-weight: 600;
+                    font-size: 1.2em;
+                    @include lightBorder;
+                    @include mainStyle;
+                    &.selected{
+                        @include btnStyle;
+                    }
+                }
+                &:first-child button{
+                    @include tagStyle;
+                }
+                
+            }             
+        }
+    }
+    .goods{
+        width:640px;
+        .cards{
+            ul{
+                display: flex;
+                flex-wrap: wrap;                    
+                li.card{                        
+                    width:300px;
+                    margin:0 0 20px 20px;
+                    &:last-child{
+                        margin-bottom: 30px;
+                    }
+                    .pic{
+                        position: relative;
+                        & > *{
+                            position: absolute;
+                            &:first-child{
+                                position: relative;
+                            }
+                        }
+                        .favorite{
+                            right:22px;
+                            top: 19px;
+                            background: transparent;
+                            img{
+                                width:26px;
+                            }
+                        }    
+                        .tag{
+                            @include tagStyle;
+                            top:0;
+                            left:1em;
+                            font-size: 0.8em;
+                            line-height: 20px;
+                            -webkit-writing-mode: vertical-lr;
+                            writing-mode: vertical-lr;
+                            height:107px; 
+                            line-height: 36px;    
+                            letter-spacing: 0.2em;                           
+                        }
+                                                
+                    }
+                    .info{
+                        margin-top: -5px;
+                        display: flex;
+                        line-height: 20px;
+                        & > *{
                             @include lightBorder;
                             margin-right:-1px;
-                            box-sizing: border-box;
-                            height:100%;
-                            width:60px;
-                            font-size: 20px;
-                            line-height: 20px;
-                            text-align: center;
-                            img{
-                                width:24px;
-                                height:24px;
-                            }
-                            &.selected{
-                                @include tagStyle;
-                            }                            
+                            padding:1em 0;
                         }
+                        .name{
+                            width:173px;
+                        }
+                        .price{
+                            width: 127px;
+                            font-weight: 600;
+                        }
+                        
+                    }
+                    .add_cart{
+                        @include btnStyle;
+                        width:100%;
+                        font-weight: 600;     
+                        font-size: 1.2em;
+                        height:65px;
+                        &:hover{
+                            @include tagStyle;
+                        }                       
                     }
                 }
             }
         }
-
+        .pagination{
+            ul{
+                width:100%;
+                display: flex;
+                justify-content: flex-end;                    
+                li{         
+                    text-align: center;               
+                    button{
+                        @include mainStyle;
+                        @include lightBorder;
+                        @include square(60px);
+                        margin-right:-1px;
+                        box-sizing: border-box;                            
+                        font-size: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        img{
+                            width:24px;
+                            height:24px;
+                        }
+                        &.selected{
+                            @include tagStyle;
+                        }                            
+                    }
+                }
+            }
+        }
     }
 }
 footer{
@@ -176,7 +188,7 @@ footer{
         width:780px;
         margin: 0 auto;
     }
-    section.subscribe{
+    .subscribe{
         @include tagStyle;        
         padding: 30px 0;
         .container{
@@ -185,12 +197,15 @@ footer{
             align-items: center;
         }        
         h1{
-            display: flex;
-            align-items: center;
             font-size: 24px;
             font-weight: normal;
         }
         .send_email{
+            width: 380px;
+            justify-content: space-between;
+            .icon_mail{
+                padding-left: 20px;
+            }
             input{
                 @include btnStyle;
                 border:none;
@@ -198,11 +213,16 @@ footer{
             }
             background-color: $light-green;
             button{
+                height: 56px;
+                width: 64px;
                 background-color: $lemon-yellow;
+                img{
+                    @include square(24px);
+                }
             }
         }
     }
-    section.contact{
+    .contact{
         @include btnStyle;
         padding: 30px 0;
         .container{
@@ -215,23 +235,34 @@ footer{
             justify-content: space-between;
             .logo_txt{
                 margin-top: 10px;
-                margin-bottom:100px;
+                margin-bottom:115px;
             }
-            ul{
+            .info{
                 line-height: 24px;
                 font-size: 0.8em;           
                 font-weight: normal;    
+                margin-bottom: 30px;
             }
-        }
-        
+            .social_btns{
+                a{
+                    color:transparent;
+                }
+            }
+        }        
         h1{
             writing-mode: vertical-rl;
             font-size: 1.2em;
+            line-height: 1.5em;
+            letter-spacing: 0.1em;
         }
         .wraper{
             display: flex;
             flex-direction: column;
             justify-content: space-between;            
+        }
+        .copy_right{
+            font-size: 0.8em;
+            font-family: "Times";
         }
     }
     img{
@@ -250,7 +281,6 @@ footer{
         &[alt=logo_txt]{
             width: 172px;
         }
-
     }
 
 }

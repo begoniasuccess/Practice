@@ -13,11 +13,13 @@
         <nav class="menu">
             <h1>Sweetaste</h1>            
             <ul class="row-align-center">
-                <li>首頁</li>
-                <li>甜點</li>
-                <li>登入</li>
-                <li>
-                    <img src="img/shopping_cart.png" alt="">
+                <li><button>首頁</button></li>
+                <li><button>甜點</button></li>
+                <li><button>登入</button></li>
+                <li class="cart">
+                    <button>
+                        <img src="img/shopping_cart.png" alt="">
+                    </button>                    
                 </li>
             </ul>
         </nav>        
@@ -26,9 +28,6 @@
         <section class="banner">
             <img src="img/banner.png" alt="">
         </section>
-        <div class="test">
-            <div></div>
-        </div>
         <div class="wraper">
             <nav class="menu">
                 <ul>
@@ -167,12 +166,14 @@
     <footer>
         <section class="subscribe">         
             <div class="container">
-                <h1>
+                <h1 class="row-align-center">
                     <img src="img/logo-light.svg" alt="logo_light">
                     訂閱你我的甜蜜郵件
                 </h1>
-                <div class="send_email">
-                    <img src="img/mail-24px.png" alt="icon_mail">
+                <div class="send_email row-align-center">
+                    <div class="icon_mail">
+                        <img src="img/mail-24px.png" alt="icon_mail">
+                    </div>                    
                     <input type="email" name="" id="">
                     <button>
                         <img src="img/arrow_forward-24px.png" alt="arrow_forward">
@@ -186,20 +187,24 @@
                     <div class="logo_txt">
                         <img src="img/logotype-sm-dark.svg" alt="logo_txt">
                     </div>
-                    <ul>
+                    <ul class="info">
                         <li>07-1234-5678</li>
                         <li>sweetaste@email.com</li>
                         <li>800 高雄市新興區幸福路 520 號</li>
                     </ul>
                     <div class="social_btns">
-                        <img src="img/ic-line@.svg" alt="icon_line">
-                        <img src="img/ic-facebook.svg" alt="icon_fb">
+                        <a href="https://line.me/zh-hant/" target="_blank">
+                            <img src="img/ic-line@.svg" alt="icon_line">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="img/ic-facebook.svg" alt="icon_fb">
+                        </a>
                     </div>
                 </div>                
                 <div class="wraper">
                     <h1>
-                        今天是個<br>
-                         吃甜點的好日子。
+                        今天是個──<br>
+                        &ensp;吃甜點的好日子。
                     </h1>
                     <p class="copy_right">
                         © 2018 Sweetaste* All Rights Reserved
